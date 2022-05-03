@@ -57,7 +57,7 @@ if [[ -z $URL ]]; then
 	exit 1
 fi
 # ENABLE HTTPS
-if [[ $MODE_HTTPS ]]; then
+if [[ $MODE_HTTPS -eq 1 ]]; then
 	CURL_COMMAND="$CURL_COMMAND --ssl -k"
 fi
 # SHOW VERBOSE INFO
